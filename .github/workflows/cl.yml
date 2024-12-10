@@ -26,6 +26,6 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Build Docker image
-        run: docker build -t dweblab/songdo .
+        run: docker build -t idotoo/idotoo .
       - name: Push docker image
         run: docker push idotoo/idotoo:latest
